@@ -30,4 +30,4 @@ Este proyecto contiene el ciclo completo de diseño de pruebas estructuradas, ej
 ## 🐛 Resumen del Defecto Crítico Detectado (BUG-001)
 * **Incidencia:** El botón "ADD TO CART" del producto *Sauce Labs Fleece Jacket* cambia visualmente a "REMOVE" al hacer clic, pero no añade el artículo al carrito (el contador permanece en 0) ni actualiza el estado interno de la sesión.
 * **Causa Raíz:** Error interno de red (Error 404 / 500 simulado en la API del servidor al procesar el ID específico del producto), validado en los logs adjuntos.
-* **Evidencia en Video:** [Ver video de réplica del error en el repositorio](./2-evidence/BUG-001/BUG-001_BUG_boton_no_funciona.mp4?raw=true)
+<video src="./2-evidence/BUG-001/BUG-001_BUG_boton_no_funciona.mp4" controls width="100%"></video>
