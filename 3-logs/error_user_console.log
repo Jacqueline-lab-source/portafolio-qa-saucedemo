@@ -1,0 +1,14 @@
+12:27:59.716 inventory.html:1  GET https://www.saucedemo.com/inventory.html 404 (Not Found)
+
+12:27:59.725 Navigated to https://www.saucedemo.com/inventory.html
+
+12:27:59.767 Navigated to https://www.saucedemo.com/?/inventory.html
+
+12:28:02.656 InventoryListItem.jsx:42 Uncaught Error: Failed to add item to the cart.
+
+12:28:06.076 /inventory.html:1 Access to fetch at 'https://submit.backtrace.io/UNIVERSE/TOKEN/json' from origin 'https://www.saucedemo.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+12:28:06.076 index.js:679  POST https://submit.backtrace.io/UNIVERSE/TOKEN/json net::ERR_FAILED 503 (Service Unavailable)
+
+12:28:09.407 /inventory.html:1 Access to fetch at 'https://submit.backtrace.io/UNIVERSE/TOKEN/json' from origin 'https://www.saucedemo.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+12:28:09.408 index.js:679  POST https://submit.backtrace.io/UNIVERSE/TOKEN/json net::ERR_FAILED 503 (Service Unavailable)

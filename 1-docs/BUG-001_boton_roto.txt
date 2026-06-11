@@ -1,0 +1,43 @@
+
+(BUG REPORT) #001
+======================================================================
+ID: BUG-001
+TÍTULO: El botón "Add to cart" del tercer producto ("Sauce Labs Bolt T-Shirt") no responde y no añade el artículo al carrito.
+PROYECTO: SauceDemo E-Commerce
+COMPONENTE: Catálogo / Carrito de compras
+AMBIENTE: Producción - Windows 11 Home / Navegador Google Chrome
+USUARIO AFECTADO: error_user
+GRAVEDAD: Alta (Bloquea el flujo principal de compra para ciertos artículos)
+PRIORIDAD: Alta
+
+----------------------------------------------------------------------
+PRECONDICIONES:
+- El usuario debe contar con las credenciales del perfil de pruebas 'error_user'.
+- El navegador debe tener la consola de desarrollo activa (F12) para registrar las excepciones.
+
+----------------------------------------------------------------------
+DESCRIPCIÓN:
+Al iniciar sesión con el perfil 'error_user' e intentar añadir la camiseta ("Sauce Labs Bolt T-Shirt") al carrito, el botón no cambia de estado a "Remove", el contador del carrito no se actualiza y el sistema no procesa la solicitud.
+
+----------------------------------------------------------------------
+PASOS PARA REPRODUCIR:
+1. Navegar a https://www.saucedemo.com/
+2. Iniciar sesión con el usuario "error_user" y contraseña "secret_sauce".
+3. En la pantalla de productos, hacer clic en "Add to cart" del primer artículo ("Sauce Labs Backpack") para verificar que la interfaz responde (Cambia a 'Remove').
+4. Ubicar el tercer artículo de la lista: "Sauce Labs Bolt T-Shirt".
+5. Hacer clic en el botón "Add to cart" de este tercer artículo.
+
+----------------------------------------------------------------------
+RESULTADO ESPERADO:
+El botón del tercer producto debe cambiar visualmente a "Remove" y el icono del carrito debe actualizarse sumando el nuevo producto (incrementar a 1).
+
+----------------------------------------------------------------------
+RESULTADO ACTUAL:
+El botón de la camiseta ("Sauce Labs Bolt T-Shirt") no realiza ninguna acción en la interfaz. El contador del carrito no aumenta y se dispara un error interno en la consola del navegador.
+
+----------------------------------------------------------------------
+EVIDENCIAS ADJUNTAS:
+- Captura de pantalla: /evidence/BUG-001/BUG_boton_no_funciona.png
+- Video/GIF: /evidence/BUG-001/BUG_boton_no_funciona.mp4
+- Log del sistema: /logs/error_user_console.log
+======================================================================
