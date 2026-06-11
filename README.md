@@ -1,4 +1,18 @@
 # 🧪 Proyecto de Pruebas Manuales y Gestión de Defectos - SauceDemo
+## 🎯 Alcance y Estrategia de Pruebas (Enfoque ISTQB)
+
+Para garantizar la calidad y estabilidad de la plataforma e-commerce *SauceDemo*, se diseñó y ejecutó una estrategia de pruebas fundamentada en las mejores prácticas de la ingeniería de software y los estándares del **ISTQB**, enfocando el esfuerzo en mitigar los riesgos de negocio en los flujos críticos de la aplicación.
+
+### ⚙️ Tipos de Pruebas Aplicadas
+*   **Pruebas Funcionales (Caja Negra):** Evaluadas desde la perspectiva del usuario final para asegurar que las reglas de negocio (inicio de sesión, gestión del carrito y catálogo) se comporten exactamente según lo esperado, sin necesidad de analizar la estructura del código interno.
+*   **Pruebas de Regresión:** Ejecutadas sistemáticamente tras la detección e identificación de defectos críticos para verificar que las modificaciones y correcciones en el entorno no hayan afectado negativamente a las funcionalidades que ya operaban correctamente.
+
+### 📋 Técnicas de Diseño de Pruebas Utilizadas
+Para optimizar la cobertura de pruebas minimizando el número de escenarios ejecutados, se aplicaron técnicas analíticas basadas en especificaciones:
+1.  **Tablas de Decisión:** Utilizadas para mapear y validar de forma exhaustiva las diferentes combinaciones de credenciales en la pantalla de *Login* (usuarios válidos, inválidos, bloqueados y contraseñas incorrectas).
+2.  **Análisis de Valores Frontera (BVA) y Transición de Estados:** Empleados en el flujo del carrito de compras y filtros de ordenamiento para comprobar la consistencia de los datos numéricos y los cambios lógicos del estado de la interfaz (ej. la transición del botón de "ADD TO CART" a "REMOVE").
+
+---
 
 ## 👤 Información del Analista
 * **Nombre:** Jacqueline Luna
@@ -8,7 +22,7 @@
 
 ---
 
-## 🎯 Alcance del Proyecto
+## ## 💻 Sobre la Plataforma de Pruebas
 Este proyecto contiene el ciclo completo de diseño de pruebas estructuradas, ejecución funcional E2E y reporte técnico de defectos críticos para la plataforma e-commerce **SauceDemo**. Las pruebas se enfocaron en validar los flujos principales del usuario estándar (`standard_user`), así como el control de accesos y la integridad de la interfaz web.
 
 ---
