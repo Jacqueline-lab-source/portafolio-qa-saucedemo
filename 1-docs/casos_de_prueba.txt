@@ -1,1 +1,41 @@
-fdf
+======================================================================
+PROYECTO: PORTAFOLIO QA - SAUCEDEMO
+DOCUMENTACIÓN DE CASOS DE PRUEBA (MÓDULO MANUAL)
+======================================================================
+
+----------------------------------------------------------------------
+CP01 - Inicio de Sesión Exitoso
+----------------------------------------------------------------------
+- Precondición: El usuario se encuentra en la URL de SauceDemo (https://www.saucedemo.com/).
+- Pasos:
+  1. Ingresar el usuario válido "standard_user".
+  2. Ingresar la contraseña válida "secret_sauce".
+  3. Hacer clic en el botón "Login".
+- Resultado Esperado: Redirección exitosa a la pantalla de inventario (/inventory.html) y visualización del catálogo de productos.
+
+----------------------------------------------------------------------
+CP02 - Usuario Bloqueado
+----------------------------------------------------------------------
+- Precondición: El usuario se encuentra en la URL de SauceDemo.
+- Pasos:
+  1. Ingresar el usuario "locked_out_user".
+  2. Ingresar la contraseña "secret_sauce".
+  3. Hacer clic en el botón "Login".
+- Resultado Esperado: El sistema no permite el ingreso y muestra el mensaje de error en pantalla: "Epic sadface: Sorry, this user has been locked out."
+
+----------------------------------------------------------------------
+CP03 - Ordenamiento de Productos (Precio de Menor a Mayor)
+----------------------------------------------------------------------
+- Precondición: El usuario ha iniciado sesión correctamente.
+- Pasos:
+  1. Hacer clic en el menú desplegable de ordenamiento (Filter).
+  2. Seleccionar la opción "Price (low to high)".
+- Resultado Esperado: La lista de productos se reorganiza automáticamente mostrando primero el artículo de menor precio y al final el más costoso.
+
+----------------------------------------------------------------------
+CP04 - Remover Producto del Carrito
+----------------------------------------------------------------------
+- Precondición: El usuario está logueado y agregó un artículo al carrito de compras.
+- Pasos:
+  1. Hacer clic en el botón "Remove" del producto previamente seleccionado.
+- Resultado Esperado: El botón cambia visualmente a "Add to cart" y el contador numérico del carrito (icono superior derecho) disminuye o desaparece.
